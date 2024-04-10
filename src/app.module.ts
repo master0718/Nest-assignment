@@ -14,11 +14,11 @@ import { FavoriteModule } from './favorite/favorite.module';
     CatsModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'localhost', //db server
       port: 5432,
-      username: 'postgres',
-      password: '123456',
-      database: 'cat_adoption',
+      username: 'postgres', // your username
+      password: '123456', //your password
+      database: 'cat_adoption', //your database name
       entities: ["dist/**/*.entity{.ts,.js}"],
       synchronize: true, // set to false in production
     }),
